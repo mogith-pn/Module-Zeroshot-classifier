@@ -77,7 +77,7 @@ def classify_concept(cupl_prompt, image_bytes, model_obj):
 
 
 # Title of the app
-st.title("Clarify Image Using LLM Prompt")
+st.title("Classify Image Using LLM")
 
 
 # Main app logic
