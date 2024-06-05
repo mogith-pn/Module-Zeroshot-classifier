@@ -12,10 +12,8 @@ from clarifai.client.model import Inputs
 
 # Clarifai Configuration
 
-query_params = st.experimental_get_query_params()
-USER_ID=query_params.get("user_id", [])[0]
-app_id=query_params.get("app_id", [])[0]
-PAT = query_params.get("pat",[])[0]
+USER_ID = st.secrets("USER_ID")
+PAT = st.secrets("PAT")
 
 #use multi model - Gpt-4o
 model_url="https://clarifai.com/openai/chat-completion/models/gpt-4o"
