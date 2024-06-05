@@ -12,8 +12,8 @@ from clarifai.client.model import Inputs
 
 # Clarifai Configuration
 
-USER_ID = st.secrets("USER_ID")
-PAT = st.secrets("PAT")
+USER_ID = st.secrets["USER_ID"]
+PAT = st.secrets["PAT"]
 
 #use multi model - Gpt-4o
 model_url="https://clarifai.com/openai/chat-completion/models/gpt-4o"
